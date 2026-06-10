@@ -1,0 +1,13 @@
+python train.py --workers 8 --device 0 --batch 16 --data data/pest24.yaml --img 640 --cfg models/detect/cbam-gelan.yaml --weights '' --name cbamGELAN16Pest24 --hyp hyp.scratch-high.yaml --min-items 0 --epochs 300 --close-mosaic 15 --patience 300 --cos-lr TRUE --lr0 0.0001 
+
+# evaluate gelan models
+python val.py --data data/ip102.yaml --img 640 --batch 32 --conf 0.001 --iou 0.4 --device 0 --weights '/home/suza/YOLO/yolov9/runs/train/FullcseGELAN16IP102/weights/best.pt' --save-json --name FullcseGELAN16IP102
+
+
+python val.py --data data/pest24.yaml --img 640 --batch 16 --conf 0.001 --iou 0.4 --device 0 --weights '/home/suza/YOLO/yolov9/runs/train/pest24/full-cse-gelan-16-pest24/weights/best.pt' --save-json --name FullcseGELAN16Pest24
+
+
+python val.py --data data/jute17.yaml --img 640 --batch 32 --conf 0.001 --iou 0.4 --device 0 --weights '/home/suza/YOLO/yolov9/runs/train/jute/msff-8-jute3/weights/best.pt' --save-json --name msff-8-jute3
+
+
+ python train.py --workers 8 --device 0 --batch 16 --data data/jute17.yaml --weights weights/yolov9-m-converted.pt --img 640 --hyp hyp.scratch-high.yaml --min-items 0 --close-mosaic 15  --epochs 300 --patience 300  --cfg models/detect/cbam-msff-gelan.yaml --name cbam-msff-gelan
