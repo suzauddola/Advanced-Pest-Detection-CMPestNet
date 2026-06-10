@@ -22,7 +22,7 @@
   |-----------|-----------|-------------|---------|
   | **Jute17**    | **85.6% mAP** | **+9.2%**   | **350+** |
   | **Pest24**    | **78.22% mAP** | **+8.02%** | **370+** |
-  | **IP102**     | **78.15% Acc** | SOTA        | -       |
+  | **IP102**     | **78.15% Acc** |  --        | --       |
 
   <p>
     <a href="https://github.com/yourusername/CMPestNet"><strong>⭐ Star CMPestNet</strong></a> • 
