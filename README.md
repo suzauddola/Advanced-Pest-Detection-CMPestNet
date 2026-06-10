@@ -1,7 +1,6 @@
 # Advanced-Pest-Detection-CMPestNet
 Advanced Channel-Enhanced Multi-Scale Pest Detection Network (CMPestNet) for crop-specific and cross-crop pest identification. Outperforms SOTA on Jute17, Pest24, and IP102 datasets.
-Topics (add these):
-deep-learning, yolo, pest-detection, computer-vision, agriculture, crop-protection, object-detection, jute-pest, cmsfe-elan, ce-gelan
+
 <div align="center">
   <h1>Hi there 👋, I'm Md Suzauddola</h1>
   
@@ -40,8 +39,9 @@ deep-learning, yolo, pest-detection, computer-vision, agriculture, crop-protecti
 - **[CMPestNet]** - Advanced deep learning model for crop-specific and cross-crop pest identification (Expert Systems with Applications, 2025)
 - ... (add more)
 
-### 🛠️ Tech Stack
-`PyTorch` `YOLO` `Computer Vision` `Python` `OpenCV` `Albumentations`
+### 🛠️ Tech Stack and Topics
+Tech Stack: `PyTorch` `YOLO` `Computer Vision` `Python` `OpenCV` `Albumentations` 
+Topics: `Deep-Learning` `Pest-Detection` `Agriculture` `Crop-Protection` `Object-Detection` `CMSFE-ELAN` `CE-GELAN`
 
 ---
 
