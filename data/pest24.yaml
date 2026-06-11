@@ -1,0 +1,8 @@
+# train: ./pest24/train.txt
+# val: ./pest24/val.txt
+# test: ./pest24/test.txt
+train: /home/suza/YOLO/yolov7/pest24/train/images
+val: /home/suza/YOLO/yolov7/pest24/val/images
+test: /home/suza/YOLO/yolov7/pest24/val/images
+nc: 24
+names: ['Rice planthopper', 'Rice Leaf', 'Chilo suppressalis', 'Armyworm', 'Bollworm', 'Meadow borer', 'Athetis lepigone', 'Spodoptera litura', 'Spodoptera exigua', 'Stem borer', 'Little Gecko', 'Plutella xylostella', 'Spodoptera cabbage', 'Scotogramma trifolii Rottemberg', 'Yellow tiger', 'Land tiger', 'Eight-character tiger', 'Holotrichia oblita', 'Holotrichia parallela', 'Anomala corpulenta', 'Gryllotalpa orientalis', 'Nematode trench', 'Agriotes fuscicollis Miwa', 'Melahotus']

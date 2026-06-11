@@ -1,0 +1,53 @@
+path: ../yolov9/jute17/  # dataset root dir
+train: _train.txt  # train images (relative to 'path') 118287 images
+# train: mosaic.txt
+# train: mosaictrain.txt
+val: _val.txt  # val images (relative to 'path') 5000 images
+test: _val.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+nc: 17
+
+# Classes
+names:
+  0: beet_armyworm
+  1: black_hairy
+  2: cut_worm
+  3: field_cricket
+  4: jute_aphid
+  5: jute_hairy
+  6: jute_red_mite
+  7: jute_semilooper
+  8: jute_stem_girdler
+  9: jute_stem_weevil
+  10: leaf_beetle
+  11: mealy_bug
+  12: pod_borer
+  13: scopula_emissaria
+  14: termite
+  15: termite_odontotermes_rambur
+  16: yellow_mite
+
+
+# stuff names
+stuff_names: [
+  'beet_armyworm', 'black_hairy', 'cut_worm', 'field_cricket', 'jute_aphid', 'jute_hairy', 'jute_red_mite', 'jute_semilooper', 'jute_stem_girdler', 'jute_stem_weevil', 'leaf_beetle', 'mealy_bug', 'pod_borer', 'scopula_emissaria', 'termite', 'termite_odontotermes_rambur', 'yellow_mite'
+]
+
+
+# Download script/URL (optional)
+#download: |
+#  from utils.general import download, Path
+
+
+  # Download labels
+  #segments = True  # segment or box labels
+  #dir = Path(yaml['path'])  # dataset root dir
+  #url = 'https://github.com/WongKinYiu/yolov7/releases/download/v0.1/'
+  #urls = [url + ('coco2017labels-segments.zip' if segments else 'coco2017labels.zip')]  # labels
+  #download(urls, dir=dir.parent)
+
+  # Download data
+  #urls = ['http://images.cocodataset.org/zips/train2017.zip',  # 19G, 118k images
+  #        'http://images.cocodataset.org/zips/val2017.zip',  # 1G, 5k images
+  #        'http://images.cocodataset.org/zips/test2017.zip']  # 7G, 41k images (optional)
+  #download(urls, dir=dir / 'images', threads=3)
